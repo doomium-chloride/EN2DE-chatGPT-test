@@ -31,8 +31,7 @@ namespace EN2DE_chatGPT
         {
             InitializeComponent();
 
-            var apiKey = Environment.GetEnvironmentVariable("OPEN_AI_API_KEY") ?? "";
-
+            var apiKey = Environment.GetEnvironmentVariable("OPEN_AI_API_KEY") ?? throw new KeyNotFoundException("No api key found");
             apiService = new OpenAIService(new OpenAiOptions
             {
                 ApiKey = apiKey
