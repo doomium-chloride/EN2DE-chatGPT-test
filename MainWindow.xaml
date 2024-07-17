@@ -1,0 +1,16 @@
+﻿<Window x:Class="EN2DE_chatGPT.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:EN2DE_chatGPT"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Label Content="Source file" HorizontalAlignment="Left" Margin="134,83,0,0" VerticalAlignment="Top" Width="300"/>
+        <TextBox Name="sourceFileAddress" HorizontalAlignment="Left" Height="24" Margin="134,125,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="300"/>
+        <Label Content="Target file" HorizontalAlignment="Left" Margin="134,183,0,0" VerticalAlignment="Top" Width="300"/>
+        <TextBox Name="targetFileAddress" HorizontalAlignment="Left" Height="24" Margin="134,225,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="300"/>
+        <Button Content="Translate" HorizontalAlignment="Left" Height="31" Margin="134,312,0,0" VerticalAlignment="Top" Width="100"/>
+    </Grid>
+</Window>
